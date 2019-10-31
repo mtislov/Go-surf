@@ -3,6 +3,7 @@ body {
     background-color: $color-black;
     font-family: 'Fira Sans', sans-serif;
     font-weight: $font-regular;
+    line-height: 1.45;
 }
 
 a {
@@ -10,12 +11,41 @@ a {
     text-decoration: none;
 }
 
-.suptitle-left {
+p {margin: 0;}
+h1,h2,h3 {margin: 0;}
+
+.suptitle{
+    display: inline-block;
     font-size: 22px;
     line-height: 1.45;
-    text-align: right;
     letter-spacing: 7.33333px;
     text-transform: uppercase;
     font-weight: $font-regular;
     opacity: $opacity-common;
+    position: relative;
+
+    &::before {
+        display: block;
+        content: "";
+        width: 80px;
+        height: 1px;
+        background-color: $color-common;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+
+    &--left { padding-left: 107px; }
+    &--right {padding-right: 107px;}
+}
+
+.title {
+    font-weight: $font-extra-bold;
+    font-size: 80px;
+    line-height: 1.075;
+    text-transform: uppercase;
+
+    &--small {
+        font-size: 40px;
+    }
 }

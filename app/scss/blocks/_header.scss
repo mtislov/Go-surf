@@ -10,8 +10,23 @@
     }
 }
 
-.slider-item__info {
+.header__content {
+    text-align: right;
     position: absolute;
     right: 80px;
     bottom: 116px;
+
+    .suptitle {
+        margin-bottom: 11px;
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+    
+    .title--small {
+        margin-top: 4px;
+        margin-bottom: 20px;
+    }
 }
+
