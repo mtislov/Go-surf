@@ -26,6 +26,34 @@
     }
 }
 
+.slider-dots {
+    position: absolute;
+    right: 80px;
+    bottom: 34px;
+    max-width: 920px;
+    width: 100%;
+    color: $color-common;
+
+    .dots-box {
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__number {
+            font-size: 24px;
+            font-weight: $font-extra-bold;
+            line-height: 1.41;
+        }
+
+        &__name {
+            font-size: 16px;
+            line-height: 1.18;
+            font-weight: $font-light;
+        }
+    }
+}
+
 .header__content {
     text-align: right;
     position: absolute;
