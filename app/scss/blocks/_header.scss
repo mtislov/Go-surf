@@ -1,3 +1,8 @@
+.hedaer {
+    height: 100vh;
+    position: relative;
+}
+
 
 .header__slider {
 
@@ -7,6 +12,17 @@
         background-size: cover;
         background-position: center;
         position: relative;
+    }
+
+    .slider-arrow {
+        position: absolute;
+        top: 40px;
+        right: 80px;
+        z-index: 4;
+    }
+
+    .slider-arrow-left {
+        right: 125px;
     }
 }
 
