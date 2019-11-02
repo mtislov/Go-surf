@@ -8,7 +8,7 @@
 
     &-item {
         height: 100vh;
-        background: url('../../img/header/header-bg.jpg') no-repeat;
+        background: url('../img/header/header-bg.jpg') no-repeat;
         background-size: cover;
         background-position: center;
         position: relative;
@@ -28,17 +28,20 @@
 
 .slider-dots {
     position: absolute;
-    right: 80px;
+    right: 50px;
     bottom: 34px;
     max-width: 920px;
     width: 100%;
     color: $color-common;
+    
 
     .dots-box {
         width: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        border-top: 4px solid $color-common;
+        padding-top: 4px;
 
         &__number {
             font-size: 24px;
@@ -52,6 +55,7 @@
             font-weight: $font-light;
         }
     }
+
 }
 
 .header__content {
