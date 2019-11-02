@@ -50,6 +50,16 @@ h1,h2,h3 {margin: 0;}
     }
 }
 
+.title-shadow {
+    z-index: 6;
+    position: absolute;
+    font-size: 200px;
+    line-height: 0.78;
+    font-weight: $font-extra-bold;
+    opacity: 0.02;
+    text-transform: uppercase;
+}
+
 .slider-arrow {
     cursor: pointer;
 }
