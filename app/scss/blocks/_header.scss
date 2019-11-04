@@ -29,8 +29,15 @@
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 32px;
         font-size: 12px;
         font-weight: $font-medium;
         color: $color-common;
@@ -41,7 +48,43 @@
         &:hover {
             color: $color-secondary;
         }
+
+        img {
+            margin-bottom: 5px;
+        }
     }
+}
+
+.aside__search {
+    display: inline-block;
+    z-index: 6;
+    cursor: pointer;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__day {
+        font-size: 72px;
+        font-weight: $font-extra-bold;
+        line-height: 1;
+    }
+
+    &__month-year {
+        font-size: 16px;
+        line-height: 1.19;
+        font-weight: $font-light;
+        letter-spacing: 1.4px;
+    }
+}
+
+.aside__location {
+    font-size: 12px;
+    letter-spacing: 1.05px;
+    font-weight: $font-light;
+    text-align: center;
 }
 
 .header__slider {
