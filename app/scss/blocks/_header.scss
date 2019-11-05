@@ -26,6 +26,10 @@
         cursor: pointer;
         z-index: 6;
     }
+
+    &__content {
+        margin-top: 25px;
+    }
 }
 
 .menu {
@@ -56,9 +60,13 @@
 }
 
 .aside__search {
-    display: inline-block;
+    display: block;
+    width: 24px;
     z-index: 6;
     cursor: pointer;
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 23px;
 }
 
 .date {
@@ -70,6 +78,7 @@
         font-size: 72px;
         font-weight: $font-extra-bold;
         line-height: 1;
+        padding-bottom: 4px;
     }
 
     &__month-year {
@@ -81,10 +90,17 @@
 }
 
 .aside__location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
     letter-spacing: 1.05px;
     font-weight: $font-light;
-    text-align: center;
+    margin-top: 30px;
+
+    img {
+        margin-right: 8px;
+    }
 }
 
 .header__slider {
@@ -95,6 +111,7 @@
         background-size: cover;
         //background-position: center;
         position: relative;
+        overflow: hidden;
     }
 
     .slider-arrow {
