@@ -195,3 +195,15 @@
     top: 0;
     z-index: 3;
 }
+
+.map__line-animation {
+    stroke-dashoffset: 600;
+    stroke-dasharray: 600;
+    animation: animdash 5s infinite 6s;
+}
+
+@keyframes animdash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
