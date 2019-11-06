@@ -103,6 +103,15 @@
     }
 }
 
+.header__go-down {
+    height: 24px;
+    position: absolute;
+    left: 210px;
+    bottom: 30px;
+    z-index: 3;
+}
+
+
 .header__slider {
 
     &-item {
