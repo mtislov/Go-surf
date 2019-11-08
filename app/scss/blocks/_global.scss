@@ -64,4 +64,9 @@ li {list-style: none;}
 
 .slider-arrow {
     cursor: pointer;
+    transition: $transition-common;
+
+    &:hover {
+        background-color: $color-secondary;
+    }
 }
