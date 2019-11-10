@@ -70,18 +70,19 @@
 }
 
 .date {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
 
     &__day {
+        display: block;
         font-size: 72px;
         font-weight: $font-extra-bold;
         line-height: 1;
         padding-bottom: 4px;
     }
 
-    &__month-year {
+    &__month,
+    &__year {
+        display: inline-block;
         font-size: 16px;
         line-height: 1.19;
         font-weight: $font-light;
@@ -104,7 +105,10 @@
 }
 
 .header__go-down {
-    height: 24px;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
     position: absolute;
     left: 210px;
     bottom: 30px;
@@ -133,6 +137,11 @@
 
     .slider-arrow-left {
         right: 125px;
+    }
+
+    .slider-arrow-bottom {
+        display: inline-block;
+        position: static;
     }
 }
 
