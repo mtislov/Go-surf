@@ -220,7 +220,7 @@
 .map__line-animation {
     stroke-dashoffset: 600;
     stroke-dasharray: 600;
-    animation: animdash 5s infinite 6s;
+    animation: animdash 5s infinite 1s;
 }
 
 @keyframes animdash {
