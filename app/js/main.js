@@ -33,4 +33,10 @@ $(function(){
         $('.header__slider').slick('slickNext');
     });
   
+
+
+    $('.header__slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+        console.log(currentSlide);
+    });
+    
 });
