@@ -217,7 +217,12 @@
     z-index: 3;
 }
 
-.map__line-animation {
+.map__line {
+    display: none;
+}
+
+.map__line--animation {
+    display: block;
     stroke-dashoffset: 600;
     stroke-dasharray: 600;
     animation: animdash 5s 1 1s;
