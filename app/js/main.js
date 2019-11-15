@@ -35,8 +35,23 @@ $(function(){
   
 
 
-    $('.header__slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
-        console.log(currentSlide);
+
+    let northLine = document.getElementById('north-line');
+    let westLine = document.getElementById('west-line');
+    let eastLine = document.getElementById('east-line');
+    let southLine = document.getElementById('south-line');
+
+    let linesArr = [northLine, westLine, eastLine, southLine];
+
+    let animateClass = 'map__line--animation';
+
+
+    $('.header__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        let beforeLine = linesArr[currentSlide];
+        let currentLine = linesArr[nextSlide];
+
+        currentLine.classList.add(animateClass);
+        beforeLine.classList.remove(animateClass);
     });
     
 });

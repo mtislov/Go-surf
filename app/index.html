@@ -23,7 +23,7 @@
 
         <g class="north-shore">
           <!-- NORTH SHORE LINE -->
-          <path class="map__line--animation" d="M727 78C700.714 108.208 578.5 209 536 158.5C472.5 105 441.777 226.418 367.5 217.5" stroke="white" stroke-width="2"/>
+          <path class="map__line map__line--animation" id="north-line" d="M727 78C700.714 108.208 578.5 209 536 158.5C472.5 105 441.777 226.418 367.5 217.5" stroke="white" stroke-width="2"/>
           <!-- NORTH SHORE POINT -->
           <path fill-rule="evenodd" clip-rule="evenodd" d="M365 221C366.657 221 368 219.657 368 218C368 216.343 366.657 215 365 215C363.343 215 362 216.343 362 218C362 219.657 363.343 221 365 221Z" fill="#4AF6CD"/>
           <text class="location-point__text" x="145" y="240">North Shore | Santa Maria, CA</text>
@@ -31,7 +31,7 @@
 
         <g id="west-shore">
           <!-- WEST SHORE LINE -->
-          <path class="map__line--animation" d="M729.114 76.9394C720.546 100.321 740.614 108.526 756.675 123.807C761.434 128.336 761.888 135.817 756.879 140.342C746.107 150.074 705.264 135.917 707.854 148.745C710.53 161.994 745.061 180.531 746.618 181.799C760.284 192.932 764.735 221.174 757.208 236.658C751.852 247.676 716.342 243.962 705.172 240.293C632.024 216.266 664.985 219.131 582.817 211.67C576.527 211.099 569.935 210.806 563.894 212.65C557.671 214.549 557.869 222.339 559.957 226.55C566.876 240.506 597.849 264.178 589.514 282.523C586.956 288.152 580.963 291.707 578.264 297.27C576.151 301.627 576.385 306.772 575.445 311.523" stroke="white" stroke-width="2"/>
+          <path class="map__line" id="west-line" d="M729.114 76.9394C720.546 100.321 740.614 108.526 756.675 123.807C761.434 128.336 761.888 135.817 756.879 140.342C746.107 150.074 705.264 135.917 707.854 148.745C710.53 161.994 745.061 180.531 746.618 181.799C760.284 192.932 764.735 221.174 757.208 236.658C751.852 247.676 716.342 243.962 705.172 240.293C632.024 216.266 664.985 219.131 582.817 211.67C576.527 211.099 569.935 210.806 563.894 212.65C557.671 214.549 557.869 222.339 559.957 226.55C566.876 240.506 597.849 264.178 589.514 282.523C586.956 288.152 580.963 291.707 578.264 297.27C576.151 301.627 576.385 306.772 575.445 311.523" stroke="white" stroke-width="2"/>
           <!-- WEST SHORE POINT -->
           <path fill-rule="evenodd" clip-rule="evenodd" d="M573.5 319C577.09 319 580 316.09 580 312.5C580 308.91 577.09 306 573.5 306C569.91 306 567 308.91 567 312.5C567 316.09 569.91 319 573.5 319Z" fill="#4AF6CD"/>
           <text class="location-point__text" x="390" y="330">West Shore | Malibu, CA</text>
@@ -39,7 +39,7 @@
 
         <g id="east-shore">
           <!-- EAST SHORE LINE -->
-          <path class="map__line--animation" xmlns="http://www.w3.org/2000/svg" d="M733.5 79C760.5 94.5 789.281 81.5465 801.5 141C807.923 172.251 795.238 163.421 787.5 204.5C785.126 217.105 780 294.5 762 285C708.5 274 663.482 341.361 662.61 352" stroke="white" stroke-width="2"/>
+          <path class="map__line" id="east-line" xmlns="http://www.w3.org/2000/svg" d="M733.5 79C760.5 94.5 789.281 81.5465 801.5 141C807.923 172.251 795.238 163.421 787.5 204.5C785.126 217.105 780 294.5 762 285C708.5 274 663.482 341.361 662.61 352" stroke="white" stroke-width="2"/>
           <!-- EAST SHORE POINT -->
           <path fill-rule="evenodd" clip-rule="evenodd" d="M661 356C662.657 356 664 354.657 664 353C664 351.343 662.657 350 661 350C659.343 350 658 351.343 658 353C658 354.657 659.343 356 661 356Z" fill="#4AF6CD"/>
           <text class="location-point__text" x="490" y="370">East Shore | Ervive, CA</text>
@@ -47,7 +47,7 @@
 
         <g id="south-shore">
           <!-- SOUTH SHORE LINE -->
-          <path class="map__line--animation" xmlns="http://www.w3.org/2000/svg" d="M733.5 79C760.5 94.5 789.281 81.5465 801.5 141C807.923 172.251 795.238 163.421 787.5 204.5C785.126 217.105 793 304.5 836 313.5C897 313.5 726.372 447.861 725.5 458.5" stroke="white" stroke-width="2"/>
+          <path class="map__line" id="south-line" xmlns="http://www.w3.org/2000/svg" d="M733.5 79C760.5 94.5 789.281 81.5465 801.5 141C807.923 172.251 795.238 163.421 787.5 204.5C785.126 217.105 793 304.5 836 313.5C897 313.5 726.372 447.861 725.5 458.5" stroke="white" stroke-width="2"/>
           <!-- SOUTH SHORE POINT -->
           <path fill-rule="evenodd" clip-rule="evenodd" d="M725 464C726.657 464 728 462.657 728 461C728 459.343 726.657 458 725 458C723.343 458 722 459.343 722 461C722 462.657 723.343 464 725 464Z" fill="#4AF6CD"/>
           <text class="location-point__text" x="510" y="480">South Shore | San Diego, CA</text>
@@ -86,7 +86,7 @@
     <a href="#surf" class="header__go-down"><img class="animated fadeInDown infinite slower" src="img/header/icon-go-down.svg" alt="Go Down"></a>
 
     <div class="header__slider">
-      <div class="header__slider-item">
+      <div class="header__slider-item" id="soska">
         <div class="header__content">
           <h3 class="suptitle suptitle--left">Surf</h3>
           <h2 class="title">North Shore</h2>
