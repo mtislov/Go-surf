@@ -1,14 +1,25 @@
 .surf {
+    .container {
+        max-width: 1280px;
+    }
+
     background-color: #171919;
     padding-top: 164px;
     height: 1000px;
 
-    .title {
+    h2.title {
         margin-left: 13.5%;
     }
 
     .title-shadow {
         top: 35px;
         right: 25px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 50px;
     }
 }
