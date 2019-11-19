@@ -5,7 +5,7 @@ document.querySelector('.date__month').textContent = date.getMonth() + 1;
 document.querySelector('.date__year').textContent = date.getFullYear();
 
 
-/* /DATE */
+/* HEADER */
 
 $(function(){
 
@@ -52,6 +52,17 @@ $(function(){
 
         currentLine.classList.add(animateClass);
         beforeLine.classList.remove(animateClass);
+    });
+    
+});
+
+
+/* SURF */
+
+$(function(){
+
+    $('.surf-list').slick({
+
     });
     
 });

@@ -4,7 +4,7 @@
     background-size: auto;
     background-color: #171919;
     padding-top: 164px;
-    height: 1000px;
+    height: 1500px;
 
     &__title {
         margin-left: 13.5%;
@@ -28,5 +28,42 @@
     &__location {
         margin-bottom: 13px;
     }
+}
 
+/* SURF SLIDER  */
+
+.surf-slider {
+    height: 100%;
+    padding-top: 110px;
+}
+
+.surf-list {
+    height: 840px;
+    display: flex;
+    
+
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+}
+
+.surf-card {
+    max-width: 400px;
+    height: 750px;
+    width: 100%;
+    background-color: #fff;
+
+
+    border: 1px solid red;
+}
+
+.surf-card:not(:first-child) {
+    margin-left: -30px;
+}
+
+.surf-card:nth-child(even) {
+    margin-top: 0px;
+}
+
+.surf-card:nth-child(odd) {
+    margin-top: auto;
 }
