@@ -62,7 +62,12 @@ $(function(){
 $(function(){
 
     $('.surf-list').slick({
-
+        rows: 0,
+        infinite: false,
+        slidesToShow: 5,
+        slidesToScroll: 2,
+        prevArrow: '<img class="slider-arrow slider-arrow-left" src="img/header/arrow-left.svg" alt=""></img>',
+        nextArrow: '<img class="slider-arrow slider-arrow-right" src="img/header/arrow-right.svg" alt=""></img>',
     });
     
 });

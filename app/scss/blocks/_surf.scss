@@ -35,6 +35,20 @@
 .surf-slider {
     height: 100%;
     padding-top: 110px;
+    
+    .slider-arrow {
+        position: absolute;
+        top: -30px;
+        right: 0;
+    }
+
+    .slider-arrow-left {
+        right: 125px;
+    }
+
+    .slider-arrow-right {
+        right: 90px;
+    }
 }
 
 .surf-list {
@@ -47,11 +61,11 @@
 }
 
 .surf-card {
-    max-width: 400px;
+    width: 400px !important;
     height: 750px;
     width: 100%;
     background-color: #fff;
-
+    color: green;
 
     border: 1px solid red;
 }
@@ -65,5 +79,5 @@
 }
 
 .surf-card:nth-child(odd) {
-    margin-top: auto;
+    margin-top: 90px;
 }
