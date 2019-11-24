@@ -89,6 +89,45 @@
         }
     }
 
+    &__content-box {
+        width: 283px;
+        height: 216px;
+        background-color: rgba(15, 16, 16, 0.7);
+        border-radius: 6px;
+        padding-top: 28px;
+        padding-left: 32px;
+    }
+
+    &__beach {
+        font-size: 18px;
+        line-height: 1.44;
+        text-transform: uppercase;
+        font-weight: $font-extra-bold;
+
+        &::after {
+            margin-top: 5px;
+            display: block;
+            content: '';
+            width: 80px;
+            height: 1px;
+            background-color: $color-secondary;
+        }
+    }
+
+    &__location {
+        font-size: 16px;
+        line-height: 1.19;
+        margin-top: 8px;
+    }
+
+    &__conditions-list {
+        width: 205px;
+        height: 70px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
     &__circle {
         width: 24px;
         height: 24px;

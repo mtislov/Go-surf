@@ -57,7 +57,30 @@ $(function(){
 });
 
 
-/* SURF */
+
+
+/* SURF / SURF-MAP */
+
+let surfPoints = document.querySelectorAll('.surf-map__circle');
+
+surfPoints.forEach(point => {
+    point.addEventListener('click', function() {
+        
+
+        
+    });
+});
+
+
+
+
+
+
+
+
+
+
+/* SURF / SURF-SLIDER */
 
 $(function(){
 
@@ -70,5 +93,6 @@ $(function(){
         prevArrow: '<img class="slider-arrow slider-arrow-left surf-arrow" src="img/header/arrow-left.svg" alt=""></img>',
         nextArrow: '<img class="slider-arrow slider-arrow-right surf-arrow" src="img/header/arrow-right.svg" alt=""></img>',
     });
-    
+
 });
+
