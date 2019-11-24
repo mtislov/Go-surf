@@ -36,14 +36,15 @@
     height: 100%;
     padding-top: 110px;
     
-    .slider-arrow {
+    .surf-arrow {
         position: absolute;
-        top: -30px;
+        top: -60px;
         right: 0;
+        padding: 10px;
     }
 
     .slider-arrow-left {
-        right: 125px;
+        right: 140px;
     }
 
     .slider-arrow-right {
@@ -54,8 +55,6 @@
 .surf-list {
     height: 840px;
     display: flex;
-    
-
 }
 
 .surf-card {
@@ -66,14 +65,19 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    
 
    &__inner {
        width: 100%;
        height: 100%;
        background-color: rgba(#1C2121, .85);
        z-index: 5;
+       transition: background-color $transition-common;
    }
+
+   &:hover &__inner {
+        background-color: rgba(#1C2121, 0.3);
+    }
 
    &__title {
        width: 140px;
@@ -86,6 +90,7 @@
 
    &__location {
        font-size: 18px;
+       line-height: 1;
        letter-spacing: 8px;
        text-transform: uppercase;
        transform: rotate(-90deg);
@@ -99,7 +104,19 @@
        span {
            font-weight: 100;
        }
-   }
+    }
+
+    .btn-surf {
+        opacity: 0;
+        position: absolute;
+        bottom: 0;
+        left: 40px;
+        transition: opacity $transition-common;
+    }
+
+    &:hover .btn-surf {
+        opacity: 1;
+    }
 
 }
 

@@ -63,11 +63,12 @@ $(function(){
 
     $('.surf-list').slick({
         rows: 0,
+        touchThreshold: 10,
         infinite: false,
         slidesToShow: 5,
-        slidesToScroll: 4,
-        prevArrow: '<img class="slider-arrow slider-arrow-left" src="img/header/arrow-left.svg" alt=""></img>',
-        nextArrow: '<img class="slider-arrow slider-arrow-right" src="img/header/arrow-right.svg" alt=""></img>',
+        slidesToScroll: 3,
+        prevArrow: '<img class="slider-arrow slider-arrow-left surf-arrow" src="img/header/arrow-left.svg" alt=""></img>',
+        nextArrow: '<img class="slider-arrow slider-arrow-right surf-arrow" src="img/header/arrow-right.svg" alt=""></img>',
     });
     
 });
