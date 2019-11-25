@@ -96,6 +96,25 @@
         border-radius: 6px;
         padding-top: 28px;
         padding-left: 32px;
+        position: relative;
+    }
+
+    &__surf-link {
+        display: flex;
+        position: absolute;
+        right: 27px;
+        top: 27px;
+        align-items: center;
+        padding: 5px;
+        box-sizing: content-box;
+
+        &:hover {
+            background-color: $color-secondary;
+        }
+        
+        img {
+            width: 17px;
+        }
     }
 
     &__beach {
@@ -124,9 +143,25 @@
         width: 205px;
         height: 70px;
         margin-top: 30px;
+        margin-left: 7px;
         display: flex;
         justify-content: space-between;
+        text-align: center;
     }
+
+    &__coditions-value {
+        font-size: 16px;
+        line-height: 1.43;
+        font-weight: $font-extra-bold;
+    }
+
+    &__coditions-text {
+        font-size: 10px;
+        line-height: 1.2;
+        text-transform: uppercase;
+        font-weight: $font-light;
+    }
+
 
     &__circle {
         width: 24px;
