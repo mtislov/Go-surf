@@ -90,13 +90,16 @@
     }
 
     &__content-box {
+        display: none;
         width: 283px;
         height: 216px;
         background-color: rgba(15, 16, 16, 0.7);
         border-radius: 6px;
         padding-top: 28px;
         padding-left: 32px;
-        position: relative;
+        position: absolute;
+        bottom: 45px;
+        transform: translateX(-45%);
     }
 
     &__surf-link {
@@ -172,6 +175,10 @@
         cursor: pointer;
         z-index: 7;
     }
+}
+
+.surf-visible {
+    display: block;
 }
 
 
