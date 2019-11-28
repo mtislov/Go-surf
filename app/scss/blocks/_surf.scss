@@ -4,7 +4,6 @@
     background-size: auto;
     background-color: #171919;
     padding-top: 164px;
-    height: 2500px;
 
     &__title {
         margin-left: 13.5%;
@@ -50,6 +49,10 @@
 
     &__item {
         position: relative;
+
+        &:hover .surf-map__content-box {
+            display: block;
+        }
 
         &--1 {
             top: 340px;
@@ -98,8 +101,27 @@
         padding-top: 28px;
         padding-left: 32px;
         position: absolute;
-        bottom: 45px;
+        bottom: 35px;
         transform: translateX(-45%);
+        transition: opacity $transition-common;
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 20px solid $color-secondary;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            bottom: -20px;
+            left: 45%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+        }
+
+        &:hover {
+            display: block;
+        }
     }
 
     &__surf-link {
@@ -172,13 +194,8 @@
         background-color: $color-secondary;
         border-radius: 50%;
         box-shadow: 0 0 35px $color-secondary;
-        cursor: pointer;
         z-index: 7;
     }
-}
-
-.surf-visible {
-    display: block;
 }
 
 
