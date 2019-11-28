@@ -59,27 +59,6 @@ $(function(){
 
 
 
-/* SURF / SURF-MAP */
-
-let surfPoints = document.querySelectorAll('.surf-map__circle');
-
-surfPoints.forEach(point => {
-    point.addEventListener('click', function() {
-        
-        point.previousElementSibling.classList.toggle('surf-visible');
-        
-    });
-});
-
-
-
-
-
-
-
-
-
-
 /* SURF / SURF-SLIDER */
 
 $(function(){
