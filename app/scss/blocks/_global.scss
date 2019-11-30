@@ -45,16 +45,26 @@ li {list-style: none;}
         background-color: $color-common;
         position: absolute;
         top: 50%;
-        left: 0;
     }
 
-    &--left { padding-left: 107px; }
-    &--right {padding-right: 107px;}
+    &--left { 
+        padding-left: 107px; 
+        &::before {
+            left: 0;
+        }
+    }
+    &--right {
+        padding-right: 107px;
+
+        &::before {
+            right: 0;
+        }
+    }
 }
 
 .title {
     position: relative;
-    display: inline-block;
+    display: block;
 
     font-weight: $font-extra-bold;
     font-size: 80px;
