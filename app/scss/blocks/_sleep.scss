@@ -1,0 +1,105 @@
+
+.sleep {
+    padding-top: 160px;
+    padding-bottom: 165px;
+
+    &__title {
+        margin-left: 13.5%;
+        display: inline-block;
+    }
+
+    &__title-shadow {
+        top: 30%;
+        right: -15%;
+    }
+
+    &-head {
+        height: 780px;
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 180px;
+        margin-right: 80px;
+        span {font-weight: 100;}
+
+        &__resort {
+            display: block;
+            position: absolute;
+            top: -40px;
+            left: 0;
+            opacity: 0.9;
+            background: url('../../img/sleep/resort1.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            box-shadow: inset -50px 0px 50px 60px rgba(23, 25, 25, 1);
+
+            max-width: 1115px;
+            max-height: 780px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+
+}
+
+.sleep-raiting {
+    padding-top: 50px;
+    margin-top: -9%;
+    margin-left: 132px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+
+    &__icon {
+        padding-left: 10px;
+    }
+}
+
+.sleep-info {
+    max-width: 1175px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+        max-width: 290px;
+        min-height: 200px;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 18px;
+        color: $color-common;
+        opacity: $opacity-common;
+        letter-spacing: 8px;
+        line-height: 1.22;
+        text-transform: uppercase;
+        font-weight: $font-regular;
+        transform: rotate(-90deg) translate(-100%, 0);
+        transform-origin: left top;
+        top: 0;
+        left: 0;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        font-weight: $font-extra-bold;
+        font-size: 40px;
+        line-height: 0.9;
+        padding-left: 40px;
+        margin-top: -18px;
+    }
+}
+
+.btn-sleep {
+    justify-content: center;
+    margin-top: 70px;
+}
