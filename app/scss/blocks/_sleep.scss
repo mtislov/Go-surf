@@ -41,7 +41,18 @@
             height: 100%;
         }
     }
+}
 
+.sleep__slider-item {
+    background-image: 
+    url('../../img/sleep/decoraction-1.png'),
+    url('../../img/sleep/decoration-2.png');
+
+    background-position: 
+    calc(100% + 85px) calc(62%),
+    calc(100% + 160px) calc(100% + 15px);
+    background-repeat: no-repeat;
+    
 
 }
 
@@ -87,6 +98,7 @@
         transform-origin: left top;
         top: 0;
         left: 0;
+        letter-spacing: 6px;
     }
 
     &__text {
@@ -96,6 +108,7 @@
         line-height: 0.9;
         padding-left: 40px;
         margin-top: -18px;
+        letter-spacing: 6px;
     }
 }
 
