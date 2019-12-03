@@ -52,8 +52,6 @@
     calc(100% + 85px) calc(62%),
     calc(100% + 160px) calc(100% + 15px);
     background-repeat: no-repeat;
-    
-
 }
 
 .sleep-raiting {
@@ -66,10 +64,10 @@
     align-items: flex-start;
     position: relative;
 
-
     &__icon {
         padding-left: 10px;
     }
+
 }
 
 .sleep-info {
