@@ -63,10 +63,14 @@
     align-items: flex-start;
     position: relative;
 
-    &__icon {
-        padding-left: 10px;
-    }
+    &__stars {
+        display: flex;
+        line-height: 1.4;
 
+        img {
+            margin-left: 10px;
+        }
+    }
 }
 
 .sleep-info {
