@@ -111,6 +111,44 @@
         margin-top: -18px;
         letter-spacing: 6px;
     }
+
+    &__number {
+        all: unset;
+        width: 28px;
+        height: 28px;
+    }
+
+    &__symbols {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__symbol {
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        margin-top: 4px;
+    }
+
+    .minus {
+        background: url('../../img/sleep/minus.png') no-repeat center;
+    }
+
+    .plus {
+        background: url('../../img/sleep/plus.png') no-repeat center;
+        margin: 4px 3px 0 6px;
+    }
+
+    &__suptext {
+        display: block;
+        font-size: 14px;
+        text-align: right;
+        letter-spacing: 5.25px;
+        text-transform: uppercase;
+        opacity: 0.75;
+        margin-top: 2px;
+        margin-right: -5px;
+    }
 }
 
 .btn-sleep {

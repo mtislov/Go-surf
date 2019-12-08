@@ -560,6 +560,7 @@
             <li class="travel-info__item">
               <h3 class="travel-info__title">Pricing</h3>
               <p class="travel-info__text">$1,976 USD</p>
+              <span class="travel-info__suptext">Round Trip</span>
             </li>
           </ul>
           <a href="#" class="btn-common btn-travel">Book <span>Flight</span></a>
@@ -594,15 +595,34 @@
             </li>
             <li class="sleep-info__item">
               <h3 class="sleep-info__title"># of Nights</h3>
-              <p class="sleep-info__text">5 Nights</p>
+
+              <div class="sleep-info__text">
+
+                <input class="sleep-info__number" type="number" min="1" max="10" value="5" readonly>
+                <span>Nights</span>
+                <div class="sleep-info__symbols">
+                  <a class="sleep-info__symbol minus" href="#"></a>
+                  <a class="sleep-info__symbol plus" href="#"></a>
+                </div>
+              </div>
+
             </li>
             <li class="sleep-info__item">
               <h3 class="sleep-info__title"># of Guests</h3>
-              <p class="sleep-info__text">4 Guests</p>
+              <div class="sleep-info__text">
+
+                <input class="sleep-info__number" type="number" min="1" max="10" value="4" readonly>
+                <span>Guests</span>
+                <div class="sleep-info__symbols">
+                  <a class="sleep-info__symbol minus" href="#"></a>
+                  <a class="sleep-info__symbol plus" href="#"></a>
+                </div>
+              </div>
             </li>
             <li class="sleep-info__item">
               <h3 class="sleep-info__title">Pricing</h3>
-              <p class="sleep-info__text">$349 USD</p>
+              <p class="sleep-info__text">$<span class="sleep-info__price">349</span> USD</p>
+              <span class="sleep-info__suptext">Per Night</span>
             </li>
           </ul>
           <a href="#" class="btn-common btn-sleep">Book <span>stay</span></a>
