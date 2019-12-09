@@ -75,3 +75,22 @@ $(function(){
 
 });
 
+/* Sleep  */
+
+$(document).ready(function() {
+	$('.minus').click( function () {
+		let $input = $(this).parent().siblings('input');
+		let count = parseInt($input.val()) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.plus').click( function () {
+		let $input = $(this).parent().siblings('input');
+        if ($input.val() >= 9) return false; 
+		$input.val(parseInt($input.val()) + 1);
+		$input.change();
+		return false;
+	});
+});

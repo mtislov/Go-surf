@@ -115,12 +115,13 @@
     &__number {
         all: unset;
         width: 28px;
-        height: 28px;
+        height: 32px;
     }
 
     &__symbols {
         display: flex;
         justify-content: flex-end;
+        cursor: pointer;
     }
 
     &__symbol {
