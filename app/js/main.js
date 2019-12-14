@@ -83,7 +83,7 @@ $(document).ready(function() {
 
     function setPrice() {
         sleepPrice = +$('.sleep-info__nights').val() * +$('.sleep-info__guests').val() * sleepRate;
-        $('.sleep-info__price').html(sleepPrice.toFixed(2));
+        $('.sleep-info__price').html(sleepPrice.toFixed(2) + ' USD');
         return;
     }
     setPrice()

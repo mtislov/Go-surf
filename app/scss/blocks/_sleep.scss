@@ -142,6 +142,8 @@
     &__price {
         display: inline-block;
         width: 120px;
+        margin-left: 6px;
+        white-space: nowrap;
     }
 
     &__suptext {
