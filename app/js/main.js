@@ -78,12 +78,24 @@ $(function(){
 /* Sleep  */
 
 $(document).ready(function() {
+    let sleepPrice = 0;
+    let sleepRate = 17.45;
+
+    function setPrice() {
+        sleepPrice = +$('.sleep-info__nights').val() * +$('.sleep-info__guests').val() * sleepRate;
+        $('.sleep-info__price').html(sleepPrice.toFixed(2));
+        return;
+    }
+    setPrice()
+
 	$('.minus').click( function () {
 		let $input = $(this).parent().siblings('input');
 		let count = parseInt($input.val()) - 1;
 		count = count < 1 ? 1 : count;
 		$input.val(count);
 		$input.change();
+
+        setPrice()
 		return false;
 	});
 	$('.plus').click( function () {
@@ -91,6 +103,10 @@ $(document).ready(function() {
         if ($input.val() >= 9) return false; 
 		$input.val(parseInt($input.val()) + 1);
 		$input.change();
+
+        setPrice()
 		return false;
 	});
+
+
 });

@@ -109,7 +109,6 @@
         line-height: 0.9;
         padding-left: 40px;
         margin-top: -18px;
-        letter-spacing: 6px;
     }
 
     &__number {
@@ -138,6 +137,11 @@
     .plus {
         background: url('../../img/sleep/plus.png') no-repeat center;
         margin: 4px 3px 0 6px;
+    }
+
+    &__price {
+        display: inline-block;
+        width: 120px;
     }
 
     &__suptext {
