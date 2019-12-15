@@ -1,0 +1,42 @@
+.shop {
+    padding-top: 140px;
+    padding-bottom: 140px;
+
+    &__slider {
+        margin-top: 90px;
+    }
+    
+    &__title {
+        margin-left: 13.5%;
+        display: inline-block;
+    }
+
+    &__title-shadow {
+        top: 30%;
+        right: -15%;
+    }
+
+    &__content {
+        margin-left: 133px;
+        margin-top: 150px;
+    }
+
+    &__stars {
+        margin-top: 25px;
+        margin-left: -16px;
+    }
+
+    &__board-price {
+        font-weight: $font-extra-bold;
+        font-size: 32px;
+        line-height: 1.25;
+        text-transform: uppercase;
+        margin-top: -10px;
+        margin-bottom: 70px;
+
+        sup {
+            font-size: 18px;
+            padding-left: 6px;
+        }
+    }
+}
