@@ -3,7 +3,7 @@
     padding-bottom: 140px;
 
     &__slider {
-        margin-top: 90px;
+        margin-top: 80px;
     }
     
     &__title {
@@ -18,7 +18,12 @@
 
     &__content {
         margin-left: 133px;
-        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__board-info {
+        margin-top: 145px;
     }
 
     &__stars {
@@ -38,5 +43,28 @@
             font-size: 18px;
             padding-left: 6px;
         }
+    }
+}
+
+.extras {
+    max-width: 400px;
+    width: 100%;
+
+    &__title {
+        font-size: 28px;
+    }
+
+    &__list {
+        margin-top: 25px;
+        display: flex;
+    }
+
+    &__name {
+
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        opacity: 0.5;
     }
 }
