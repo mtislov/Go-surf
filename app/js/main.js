@@ -108,5 +108,15 @@ $(document).ready(function() {
 		return false;
 	});
 
+});
+
+/* Shop  */
+
+let surfboardPoint = document.querySelector('.surfboard__point');
+let surfboardStrip = document.querySelector('.surfboard__strip:last-child');
+
+surfboardPoint.addEventListener("click", function() {
+    surfboardStrip.classList.toggle('active');
 
 });
+
