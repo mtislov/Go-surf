@@ -114,9 +114,11 @@ $(document).ready(function() {
 
 let surfboardPoint = document.querySelector('.surfboard__point');
 let surfboardStrip = document.querySelector('.surfboard__strip:last-child');
+let surfboardContent = document.querySelector('.surfboard__content');
+
 
 surfboardPoint.addEventListener("click", function() {
     surfboardStrip.classList.toggle('active');
-
+    surfboardContent.classList.toggle('active');
 });
 

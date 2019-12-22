@@ -99,9 +99,8 @@
 
     &__point {
         position: absolute;
-        top: 0;
-        left: 400px;
-        cursor: pointer;
+        top: 205px;
+        left: 170px;
         display: flex;
     }
 
@@ -113,6 +112,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
     }
 
     &__strip {
@@ -138,10 +138,15 @@
     text-transform: uppercase;
 
     position: relative;
+    display: none;
     width: 255px;
     padding-left: 110px;
     box-sizing: content-box;
     margin-top: -15px;
+
+    &.active {
+        display: block;
+    }
 
 }
 
