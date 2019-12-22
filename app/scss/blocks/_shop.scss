@@ -53,7 +53,6 @@
 }
 
 .extras {
-
     margin-top: auto;
     max-width: 333px;
     width: 100%;
@@ -80,9 +79,7 @@
     }
 
     &__item {
-        text-align: center;
-
-        
+        text-align: center;  
     }
 
     &__price {
@@ -95,7 +92,6 @@
 .surfboard {
     margin-left: -10px;
     position: relative;
-
 
     &__point {
         position: absolute;
@@ -112,7 +108,7 @@
         }
 
         &--3 {
-            bottom: 56px;
+            top: 609px;
             left: 52px;
         }
     }
@@ -161,8 +157,6 @@
     }
 }
 
-
-
 .surfboard__point--right .surfboard__content {
     padding-left: 110px;
 
@@ -180,7 +174,7 @@
 
 .surfboard__point--left .surfboard__content {
     padding-right: 110px;
-    margin-left: -400px;
+    margin-left: -385px;
 
     &::after {
         content: '';

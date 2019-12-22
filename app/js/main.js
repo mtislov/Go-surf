@@ -112,11 +112,11 @@ $(document).ready(function() {
 
 /* Shop  */
 
-let surfboardPoints = document.querySelectorAll('.surfboard__point');
+let surfboardPoints = document.querySelectorAll('.surfboard__circle');
 
 for (point of surfboardPoints) {
     let surfboardStrip = point.querySelector('.surfboard__strip:last-child');
-    let surfboardContent = point.querySelector('.surfboard__content');
+    let surfboardContent = point.nextElementSibling;
 
     point.addEventListener("click", function() {
         surfboardStrip.classList.toggle('active');
