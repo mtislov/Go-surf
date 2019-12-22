@@ -102,6 +102,21 @@
         top: 205px;
         left: 170px;
         display: flex;
+
+        &--1 {
+            top: 205px;
+            left: 170px;
+        }
+
+        &--2 {
+            top: 5px;
+            left: 170px;
+        }
+
+        &--3 {
+            top: 105px;
+            left: 170px;
+        }
     }
 
     &__circle {
@@ -147,8 +162,8 @@
     &.active {
         display: block;
     }
-
 }
+
 
 .surfboard__content::before {
     content: '';

@@ -112,13 +112,19 @@ $(document).ready(function() {
 
 /* Shop  */
 
-let surfboardPoint = document.querySelector('.surfboard__point');
-let surfboardStrip = document.querySelector('.surfboard__strip:last-child');
-let surfboardContent = document.querySelector('.surfboard__content');
+let surfboardPoints = document.querySelectorAll('.surfboard__point');
+
+for (point of surfboardPoints) {
+    let surfboardStrip = point.querySelector('.surfboard__strip:last-child');
+    let surfboardContent = point.querySelector('.surfboard__content');
+
+    point.addEventListener("click", function() {
+        surfboardStrip.classList.toggle('active');
+        surfboardContent.classList.toggle('active');
+    });
+}
 
 
-surfboardPoint.addEventListener("click", function() {
-    surfboardStrip.classList.toggle('active');
-    surfboardContent.classList.toggle('active');
-});
+
+
 
