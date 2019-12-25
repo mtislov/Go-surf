@@ -1,3 +1,21 @@
+/* Smooth Scroll */
+
+$(function() {
+    $("[data-scroll]").on("click", function(event) {
+
+        event.preventDefault();
+
+        let $this = $(this);
+        let blockId = $this.data("scroll");
+        let blockOffset = $(blockId).offset().top;
+
+        $("html, body").animate({
+            scrollTop: blockOffset
+        }, 500);
+    })
+});
+
+
 /* DATE */
 let date = new Date();
 document.querySelector('.date__day').textContent = date.getDate();
