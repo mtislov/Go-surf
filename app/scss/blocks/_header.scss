@@ -20,6 +20,7 @@
     width: 100%;
     height: 100%;
     border-right: 1px solid rgba(255, 255, 255, 0.25);
+    height: 100vh;
 
     &__logo {
         display: block;
@@ -253,6 +254,10 @@
     right: 0;
     top: 0;
     z-index: 3;
+}
+
+.map-svg {
+    height: 489px;
 }
 
 .map__line {
