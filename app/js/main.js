@@ -71,7 +71,14 @@ $(function(){
         currentLine.classList.add(animateClass);
         beforeLine.classList.remove(animateClass);
     });
-    
+
+
+    /* Changing  viewBox */
+    let mapSvg = document.querySelector('.map-svg');
+
+    if (document.body.clientWidth < 800) {
+        mapSvg.setAttribute("viewBox", "0 40 770 500");
+    }
 });
 
 

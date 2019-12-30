@@ -26,7 +26,7 @@
     }
 
     .header__content {
-        bottom: 50px;
+        bottom: 70px;
     }
 
     .slider-dots {
@@ -91,6 +91,10 @@
 
 }
 
+@media (max-width: 800px) {
+
+}
+
 @media (max-height: 740px) {
 
     /* HEADER */
@@ -101,6 +105,23 @@
     .menu__link {
         text-transform: uppercase;
         font-size: 25px;
+    }
+
+    .header__content .title {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .header__content .suptitle {
+        font-size: 17px;
+    }
+
+    .dots-box__number {
+        font-size: 0px !important;
+    }
+
+    .slider-dots .dots-box {
+        width: max-content;
     }
 
 }
