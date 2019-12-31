@@ -33,8 +33,8 @@ $(function(){
         fade: true,
         rows: 0,
         swipe: false,  
-        prevArrow: '<img class="slider-arrow slider-arrow-left" src="img/header/arrow-left.svg" alt=""></img>',
-        nextArrow: '<img class="slider-arrow slider-arrow-right" src="img/header/arrow-right.svg" alt=""></img>',
+        prevArrow: '<img class="slider-arrow slider-arrow-left arrow-upper" src="img/header/arrow-left.svg" alt=""></img>',
+        nextArrow: '<img class="slider-arrow slider-arrow-right arrow-upper" src="img/header/arrow-right.svg" alt=""></img>',
     });
 
     $('.slider-dots').slick({
@@ -73,11 +73,24 @@ $(function(){
     });
 
 
-    /* Changing  viewBox */
+    /* Changing  viewBox on map*/
     let mapSvg = document.querySelector('.map-svg');
 
     if (document.body.clientWidth < 800) {
+        mapSvg.setAttribute("viewBox", "0 40 860 500");
+    }
+
+    if (document.body.clientWidth < 400) {
         mapSvg.setAttribute("viewBox", "0 40 770 500");
+    }
+
+
+    /* Changing  coords on map text*/
+    let northText = document.querySelector('.north-shore__text');
+
+    if (document.body.clientWidth < 640) {
+        northText.setAttribute("x", "382")
+        northText.setAttribute("y", "260")
     }
 });
 
