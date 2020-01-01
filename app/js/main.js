@@ -51,9 +51,6 @@ $(function(){
         $('.header__slider').slick('slickNext');
     });
   
-
-
-
     let northLine = document.getElementById('north-line');
     let westLine = document.getElementById('west-line');
     let eastLine = document.getElementById('east-line');
@@ -71,11 +68,14 @@ $(function(){
         currentLine.classList.add(animateClass);
         beforeLine.classList.remove(animateClass);
     });
+});
 
 
-    /* Changing  viewBox on map*/
-    let mapSvg = document.querySelector('.map-svg');
+let header = document.querySelector('.header');
+let mapSvg = document.querySelector('.map-svg');
+let northText = document.querySelector('.north-shore__text');
 
+function changeMap(mapSvg, northText) {
     if (document.body.clientWidth < 800) {
         mapSvg.setAttribute("viewBox", "0 40 860 500");
     }
@@ -84,15 +84,21 @@ $(function(){
         mapSvg.setAttribute("viewBox", "0 40 770 500");
     }
 
-
-    /* Changing  coords on map text*/
-    let northText = document.querySelector('.north-shore__text');
-
     if (document.body.clientWidth < 640) {
         northText.setAttribute("x", "382")
         northText.setAttribute("y", "260")
-    }
+    }  
+}
+
+changeMap(mapSvg, northText);
+
+window.addEventListener('resize', event => {
+    changeMap(mapSvg, northText);
 });
+
+/* header/ menu toggle */
+
+
 
 
 
@@ -112,6 +118,8 @@ $(function(){
     });
 
 });
+
+
 
 /* Sleep  */
 
@@ -147,6 +155,8 @@ $(document).ready(function() {
 	});
 
 });
+
+
 
 /* Shop  */
 
