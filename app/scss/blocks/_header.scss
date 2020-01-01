@@ -31,6 +31,13 @@
     &__content {
         margin-top: 25px;
     }
+    
+    &-active {
+        display: block !important;
+        background: #171919;
+        border: none;
+        opacity: 1;
+    }
 }
 
 .menu {

@@ -24,6 +24,8 @@ document.querySelector('.date__year').textContent = date.getFullYear();
 
 
 /* HEADER */
+let header = document.getElementById('header');
+
 
 $(function(){
 
@@ -71,7 +73,6 @@ $(function(){
 });
 
 
-let header = document.querySelector('.header');
 let mapSvg = document.querySelector('.map-svg');
 let northText = document.querySelector('.north-shore__text');
 
@@ -97,9 +98,16 @@ window.addEventListener('resize', event => {
 });
 
 /* header/ menu toggle */
+let menuToggle = document.getElementById('menuToggle');
+let aside = header.querySelector('.aside');
+let map = header.querySelector('.map');
+let headerContent = header.querySelector('.header__content');
 
-
-
+menuToggle.addEventListener('click', function() {
+    aside.classList.toggle('aside-active');
+    map.classList.toggle('opacity-off');
+    headerContent.classList.toggle('opacity-off');
+});
 
 
 
