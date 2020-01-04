@@ -167,7 +167,7 @@ $('.surf-list').slick({
     {
       breakpoint: 500,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.05,
         slidesToScroll: 1,
       }
     }

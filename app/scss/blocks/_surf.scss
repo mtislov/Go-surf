@@ -289,18 +289,19 @@
 
 }
 
-.surf-card:not(:first-child) {
+.surf-slider li:not(:first-child) {
     margin-left: -30px;
+    padding-left: 30px;
 }
 
-.surf-card:nth-child(even) {
+.surf-slider li:nth-child(even) {
     margin-top: 0px;
 }
 
-.surf-card:nth-child(odd) {
+.surf-slider li:nth-child(odd) {
     margin-top: 90px;
 }
 
-.surf-card:nth-child(4n + 1) {
+.surf-slider li:nth-child(4n + 1) {
     margin-top: 32px;
 }
