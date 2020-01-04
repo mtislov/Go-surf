@@ -114,6 +114,8 @@ menuToggle.addEventListener('click', function() {
 /* SURF / SURF-SLIDER */
 
 $('.surf-list').slick({
+
+    touchThreshold: 20,
     rows: 0,
     touchThreshold: 10,
     infinite: false,
@@ -140,7 +142,7 @@ $('.surf-list').slick({
       breakpoint: 1079,
       settings: {
         slidesToShow: 2.5,
-        slidesToScroll: 1
+        slidesToScroll: 1.25
       }
     },
     {
@@ -154,21 +156,31 @@ $('.surf-list').slick({
       breakpoint: 723,
       settings: {
         slidesToShow: 1.8,
-        slidesToScroll: 1
+        slidesToScroll: 0.9
       }
     },
     {
       breakpoint: 638,
       settings: {
+        touchThreshold: 30,
         slidesToShow: 1.4,
-        slidesToScroll: 1
+        slidesToScroll: 0.9
       }
     },
     {
       breakpoint: 500,
       settings: {
+        touchThreshold: 30,
         slidesToShow: 1.05,
-        slidesToScroll: 1,
+        slidesToScroll: 0.92,
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        touchThreshold: 30,
+        slidesToShow: 1.05,
+        slidesToScroll: 0.97,
       }
     }
   ]

@@ -124,8 +124,25 @@
     }
 }
 
+@media (max-width: 400px) {
+    /* SURF */
+    .surf-slider li:not(:first-child) {
+        margin-left: -10px;
+    }
 
-@media (max-height: 740px) {
+}
+
+
+
+
+@media (max-height: 850px) {
+    /* SURF */
+    .surf-slider li {
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-height: 750px) {
 
     /* HEADER */
     .menu__icon {
@@ -137,4 +154,12 @@
         font-size: 25px;
     }
 
+    /* SURF */
+    .surf-card {
+        height: 558px;
+    }
+
+    .surf-arrow {
+        display: none;
+    }
 }

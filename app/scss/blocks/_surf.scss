@@ -229,7 +229,7 @@
 
 .surf-card {
     height: 750px;
-    width: 100%;
+    min-width: 400px;
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
@@ -291,7 +291,6 @@
 
 .surf-slider li:not(:first-child) {
     margin-left: -30px;
-    padding-left: 30px;
 }
 
 .surf-slider li:nth-child(even) {
