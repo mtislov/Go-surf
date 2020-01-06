@@ -1,4 +1,6 @@
-/* Smooth Scroll */
+/*//////////////////
+///Smooth Scroll/// 
+//////////////////*/
 
 $(function() {
     $("[data-scroll]").on("click", function(event) {
@@ -108,6 +110,10 @@ menuToggle.addEventListener('click', function() {
     map.classList.toggle('opacity-off');
     headerContent.classList.toggle('opacity-off');
 });
+
+
+/* SURF /
+
 
 
 
