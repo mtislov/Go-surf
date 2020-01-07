@@ -114,6 +114,8 @@ menuToggle.addEventListener('click', function() {
 
 /* SURF */
 
+let surfMapList = document.getElementById('surf-map-list');
+surfMapList.style.height = surfMapList.offsetWidth / 1.8897 + 'px';
 
 
 /* SURF / SURF-SLIDER */

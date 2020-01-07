@@ -32,10 +32,13 @@
 
 /* SURF MAP */
 
+.surf-shape {
+    max-width: 1430px; 
+    margin: 0 auto;
+}
+
 .surf-map {
-    display: flex;
-    justify-content: center;
-    min-height: 635px;
+    margin: 0 115px;
     background: url('../../img/surf/surf-slider/surf-map.png') no-repeat;
     background-size: contain;
     background-position: center;
@@ -43,15 +46,13 @@
     
 
     &__list {
-        max-width: 1200px;
-        width: 100%;
         height: 635px;
         position: relative;
-        margin: 0 110px;
     }
 
     &__item {
         position: absolute;
+        display: none;
 
         &:hover .surf-map__content-box {
             display: block;
