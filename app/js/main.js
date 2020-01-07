@@ -112,8 +112,7 @@ menuToggle.addEventListener('click', function() {
 });
 
 
-/* SURF /
-
+/* SURF */
 
 
 
