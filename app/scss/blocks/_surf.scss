@@ -102,10 +102,15 @@
         display: none;
         width: 283px;
         height: 216px;
+        z-index: 100;
+
+
         background-color: rgba(15, 16, 16, 0.7);
         border-radius: 6px;
+
         padding-top: 28px;
         padding-left: 32px;
+
         position: absolute;
         bottom: 35px;
         transform: translateX(-45%);
