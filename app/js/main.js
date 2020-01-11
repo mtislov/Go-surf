@@ -2,20 +2,20 @@
 ///Smooth Scroll/// 
 //////////////////*/
 
-$(function() {
-    $("[data-scroll]").on("click", function(event) {
 
-        event.preventDefault();
+$("[data-scroll]").on("click", function(event) {
 
-        let $this = $(this);
-        let blockId = $this.data("scroll");
-        let blockOffset = $(blockId).offset().top;
+    event.preventDefault();
 
-        $("html, body").animate({
-            scrollTop: blockOffset
-        }, 500);
-    })
+    let $this = $(this);
+    let blockId = $this.data("scroll");
+    let blockOffset = $(blockId).offset().top;
+
+    $("html, body").animate({
+        scrollTop: blockOffset
+    }, 500);
 });
+
 
 
 /* DATE */
@@ -78,7 +78,7 @@ $(function(){
 let mapSvg = document.querySelector('.map-svg');
 let northText = document.querySelector('.north-shore__text');
 
-function changeMap(mapSvg, northText) {
+function changeMap() {
     if (document.body.clientWidth < 800) {
         mapSvg.setAttribute("viewBox", "0 40 860 500");
     }
@@ -96,7 +96,8 @@ function changeMap(mapSvg, northText) {
 changeMap(mapSvg, northText);
 
 window.addEventListener('resize', event => {
-    changeMap(mapSvg, northText);
+  setTimeout(changeMap, 1000);
+  setTimeout(calcPoints, 1000);
 });
 
 /* header/ menu toggle */
@@ -117,16 +118,15 @@ menuToggle.addEventListener('click', function() {
 let surfMapList = document.getElementById('surf-map-list');
 let pointsList = document.querySelectorAll('.surf-map__item');
 
-surfMapList.style.height = surfMapList.offsetWidth / 1.8897 + 'px';
+function calcPoints() {
+  surfMapList.style.height = surfMapList.offsetWidth / 1.8897 + 'px';
 
-
-for (point of pointsList) {
-  point.style.top = surfMapList.offsetHeight / point.dataset.top + 'px';
-  point.style.left = surfMapList.offsetWidth / point.dataset.left + 'px';
-  
+  for (point of pointsList) {
+    point.style.top = surfMapList.offsetHeight / point.dataset.top + 'px';
+    point.style.left = surfMapList.offsetWidth / point.dataset.left + 'px';
+  }
 }
-
-
+calcPoints();
 
 
 /* SURF / SURF-SLIDER */
