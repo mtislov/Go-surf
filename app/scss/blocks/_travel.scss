@@ -1,4 +1,12 @@
 
+.container--travel {
+    width: 100%;
+    max-width: 1950px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
 .travel {
     padding-top: 288px;
     padding-bottom: 165px;
@@ -74,10 +82,12 @@
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     &__item {
         max-width: 290px;
         min-height: 200px;
+        margin-bottom: 40px;
     }
 
     &__title {
@@ -118,6 +128,6 @@
 
 .btn-travel {
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 30px;
 }
 
