@@ -1,12 +1,4 @@
 
-.container--travel {
-    width: 100%;
-    max-width: 1950px;
-    padding: 0 15px;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
 .travel {
     padding-top: 288px;
     padding-bottom: 165px;
@@ -76,9 +68,11 @@
 }
 
 .travel-info {
-    max-width: 1175px;
+    max-width: 1205px;
     width: 100%;
+    padding: 0 15px;
     margin: 0 auto;
+
 
     display: flex;
     justify-content: space-between;
