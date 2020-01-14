@@ -144,6 +144,30 @@
     .travel-head {
         margin-right: 0px;
         margin-top: 0px;
+
+        &__title {
+            margin-right: 20px;
+        }
+
+        &__beach {
+            width: calc(100% + 150px);
+            overflow: hidden;
+        }
+    }
+
+    .travel-airline {
+        background-position: calc(100% + 370px) -30px;
+        margin-top: -20%;
+        padding-top: 110px;
+
+        .suptitle {
+            font-size: 19px;
+            margin-bottom: 0px;
+        }
+
+        .title {
+            font-size: 33px;
+        }
     }
 }
 
@@ -161,6 +185,10 @@
     .slider-dots {
         display: none;
     }
+}
+
+@media (max-width: 590px) {
+
 }
 
 @media (max-width: 500px) {

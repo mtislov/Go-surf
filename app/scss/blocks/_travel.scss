@@ -20,11 +20,8 @@
 
     &-head {
         height: 780px;
-
+        overflow: hidden;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
         margin-top: 60px;
         margin-right: 80px;
         span {font-weight: 100;}
@@ -46,6 +43,11 @@
         }
     }
 
+    .travel-head__title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
 
 }
 
