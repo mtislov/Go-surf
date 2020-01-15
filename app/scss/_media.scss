@@ -129,6 +129,10 @@
     }
 
     /* TRAVEL */
+    .travel {
+        padding-top: 100px;
+    }
+
     .travel-airline {
         margin-left: 20px;
         background-position: calc(100% + 300px) top;
@@ -147,6 +151,7 @@
 
         &__title {
             margin-right: 20px;
+            text-align: right;
         }
 
         &__beach {
@@ -188,7 +193,19 @@
 }
 
 @media (max-width: 590px) {
+    /* TRAVEL */
+    .travel-info__title {
+        transform: rotate(0deg);
+    }
+    .travel-info__text {
+        margin-top: 5px;
+        padding-left: 10px;
+    }
 
+    .travel-info__item {
+        min-height: auto;
+        height: auto;
+    }
 }
 
 @media (max-width: 500px) {
@@ -222,6 +239,19 @@
             width: 0px;
         }
     }
+
+    /* TRAVEL */
+    .travel {
+        padding-top: 50px;
+    }
+    .travel-info {
+        max-width: 400px;
+        justify-content: normal;
+    }
+
+    .travel-info__item {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 400px) {
@@ -233,6 +263,13 @@
     .btn-surf {
         font-size: 26px;
         height: 60px;
+    }
+    /* TRAVEL */
+    .travel-airline {
+        background-position: calc(100% + 430px) -30px;
+    }
+    .btn-travel span::after {
+        content: none;
     }
 
 }
