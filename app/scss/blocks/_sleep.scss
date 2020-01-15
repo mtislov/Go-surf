@@ -1,5 +1,6 @@
 
 .sleep {
+    overflow: hidden;
     padding-top: 160px;
     padding-bottom: 165px;
 
@@ -74,11 +75,13 @@
 }
 
 .sleep-info {
-    max-width: 1175px;
+    max-width: 1205px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
 
     &__item {
@@ -142,7 +145,8 @@
 
     &__price {
         display: inline-block;
-        width: 120px;
+        width: 0px;
+        padding-right: 215px;
         margin-left: 6px;
         white-space: nowrap;
     }
