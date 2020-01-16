@@ -65,7 +65,14 @@
         max-width: 900px;
         justify-content: space-around;
     }
+}
 
+@media (max-width: 1150px) {
+    /* SLEEP */
+    .sleep-info {
+        max-width: 805px;
+        justify-content: space-around;        
+    }
 
 }
 
@@ -137,6 +144,24 @@
         margin-left: 20px;
         background-position: calc(100% + 300px) top;
     }
+    /* SLEEP */
+    .sleep-raiting {
+        margin-left: 20px;
+    }
+
+    .sleep__slider-item {
+        background: none;
+    }
+
+    .sleep-head__resort {
+        width: 200%;
+        overflow: hidden;;
+    }
+
+    .travel-sleep__title {
+        margin-right: 20px;
+        text-align: right;
+    }
 }
 
 @media (max-width: 768px) {
@@ -174,6 +199,11 @@
             font-size: 33px;
         }
     }
+
+    /* TRAVEL */ 
+    .sleep-head__title {
+        margin-right: 20px;
+    }
 }
 
 @media (max-width: 740px) {
@@ -205,6 +235,26 @@
     .travel-info__item {
         min-height: auto;
         height: auto;
+    }
+    /* SLEEP */
+    .sleep-info {
+        max-width: 400px;
+        justify-content: normal;
+    }
+    .sleep-info__item {
+        min-height: 150px;
+    }
+    .sleep-info__title {
+        transform: rotate(0deg);
+    }
+
+    .sleep-info__text {
+        margin-top: 5px;
+        padding-left: 10px;
+    }
+
+    .sleep-head {
+        margin-right: 00px;
     }
 }
 
