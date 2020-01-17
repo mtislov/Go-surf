@@ -36,7 +36,10 @@
     .map-svg {
         height: 390px;
     }
-
+    /* SHOP */
+    .shop__stars {
+        margin-top: 40px;
+    }
 }
 
 @media (max-width: 1150px) {
@@ -73,7 +76,25 @@
         max-width: 805px;
         justify-content: space-around;        
     }
+    /* SHOP */
+    .shop__content {
+        justify-content: space-around;
+    }
 
+    .surfboard__point--right {
+        
+        .surfboard__content.active {
+            display: inline-block;
+            transform: rotate(-90deg) translate(-100%, 0);
+            transform-origin: left top;
+            top: -100px;
+            left: 10px;
+        }
+    }
+
+    .surfboard__point--right .surfboard__content::before {
+        width: 0;
+    }
 }
 
 @media (max-width: 920px) {
@@ -161,6 +182,10 @@
     .travel-sleep__title {
         margin-right: 20px;
         text-align: right;
+    }
+    /* SHOP */
+    .shop__content {
+        margin: 0 20px;
     }
 }
 

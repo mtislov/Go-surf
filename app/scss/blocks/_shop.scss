@@ -4,6 +4,7 @@
 
     &__slider {
         margin-top: 80px;
+        overflow: hidden;
     }
 
     &__slider-item {
@@ -25,6 +26,7 @@
         margin-left: 133px;
         margin-right: 70px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
