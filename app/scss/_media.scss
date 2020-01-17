@@ -245,6 +245,23 @@
     .slider-dots {
         display: none;
     }
+
+    /* SHOP */
+    .surfboard__point--left {
+    
+        .surfboard__content.active {
+            display: inline-block;
+            transform: rotate(-90deg) translate(55%, 0);
+            transform-origin: right top;
+            top: 0px;
+            left: 25px;
+
+        }
+    }
+
+    .surfboard__point--left .surfboard__content::after {
+        width: 0;
+    }
 }
 
 @media (max-width: 590px) {
