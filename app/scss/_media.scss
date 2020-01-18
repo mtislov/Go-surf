@@ -65,19 +65,25 @@
         justify-content: space-around;
     }
 
+    .btn-travel,
+    .btn-sleep {
+        margin-top: 0;
+    }
+
     /* SLEEP */
+    .sleep {
+        padding-top: 100px;
+    }
+
     .sleep-raiting {
         margin-left: 30px;
     }
 
-}
-
-@media (max-width: 1150px) {
-    /* SLEEP */
     .sleep-info {
         max-width: 805px;
         justify-content: space-around;        
     }
+
     /* SHOP */
     .shop__content {
         justify-content: space-around;
@@ -96,6 +102,10 @@
 
     .surfboard__point--right .surfboard__content::before {
         width: 0;
+    }
+    /* FOOTER */
+    .footer {
+        padding-top: 0;
     }
 }
 
@@ -193,6 +203,10 @@
 }
 
 @media (max-width: 768px) {
+
+    .title-shadow {
+        font-size: 110px;
+    }
     /* SURF */
     .surf-shape {
         display: none;
@@ -351,6 +365,10 @@
     /* SURF */
     .surf-slider li {
         margin-top: 0px !important;
+    }
+
+    .travel {
+        padding-top: 70px;
     }
 }
 
