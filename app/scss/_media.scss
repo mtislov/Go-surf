@@ -16,10 +16,6 @@
     .aside__location {
         margin-top: 20px;
     }
-    
-    .header__title-shadow {
-        font-size: 150px;
-    }
 
     .header__go-down {
         left: 120px;
@@ -68,6 +64,12 @@
         max-width: 900px;
         justify-content: space-around;
     }
+
+    /* SLEEP */
+    .sleep-raiting {
+        margin-left: 30px;
+    }
+
 }
 
 @media (max-width: 1150px) {
@@ -98,21 +100,36 @@
 }
 
 @media (max-width: 920px) {
+    /* GLOBAL */
+    .title {
+        font-size: 40px;
+
+        &--small {
+            font-size: 30px;
+        }
+
+        &--line {
+            font-size: 60px;
+        }
+
+        &--shadow {
+            font-size: 120px;
+        }
+    }
+
+    .suptitle {
+        font-size: 15px;
+    }
+
+    .text-common {
+        font-size: 30px;
+    }
+
+    
+
     /* HEADER */
     .header__content {
         right: 23px;
-    }
-
-    .header__content .title {
-        font-size: 40px;
-    }
-
-    .header__content .suptitle {
-        font-size: 20px;
-    }
-
-    .header__title-shadow {
-        display: none;
     }
 
     .slider-dots {
@@ -146,16 +163,6 @@
         padding: 15px 0px 0px 15px;
     }
 
-    .surf__content {
-        .suptitle {
-            font-size: 16px;
-        }
-
-        .title {
-            font-size: 30px;
-        }
-    }
-
     /* TRAVEL */
     .travel {
         padding-top: 100px;
@@ -179,10 +186,6 @@
         overflow: hidden;;
     }
 
-    .travel-sleep__title {
-        margin-right: 20px;
-        text-align: right;
-    }
     /* SHOP */
     .shop__content {
         margin: 0 20px;
@@ -196,13 +199,7 @@
     }
     /* TRAVEL */
     .travel-head {
-        margin-right: 0px;
         margin-top: 0px;
-
-        &__title {
-            margin-right: 20px;
-            text-align: right;
-        }
 
         &__beach {
             width: calc(100% + 150px);
@@ -214,34 +211,12 @@
         background-position: calc(100% + 370px) -30px;
         margin-top: -20%;
         padding-top: 110px;
-
-        .suptitle {
-            font-size: 19px;
-            margin-bottom: 0px;
-        }
-
-        .title {
-            font-size: 33px;
-        }
     }
 
-    /* TRAVEL */ 
-    .sleep-head__title {
-        margin-right: 20px;
-    }
 }
 
 @media (max-width: 740px) {
     /* HEADER */
-    .header__content .title {
-        margin-bottom: 10px;
-        font-size: 30px;
-    }
-
-    .header__content .suptitle {
-        font-size: 17px;
-    }
-
     .slider-dots {
         display: none;
     }
