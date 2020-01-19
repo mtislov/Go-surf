@@ -203,7 +203,7 @@ $('.surf-list').slick({
       settings: {
         touchThreshold: 30,
         slidesToShow: 1.05,
-        slidesToScroll: 0.97,
+        slidesToScroll: 0.98,
       }
     }
   ]
