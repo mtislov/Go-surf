@@ -196,6 +196,10 @@
         overflow: hidden;;
     }
 
+    .sleep-info__price {
+        padding-right: 105px;
+    }
+
     /* SHOP */
     .shop__content {
         margin: 0 20px;
@@ -254,7 +258,16 @@
 }
 
 @media (max-width: 590px) {
+    /* SURF */
+    .surf__content {
+        margin-right: 20px;
+    }
+
     /* TRAVEL */
+    .travel-info {
+        max-width: 490px;
+    }
+
     .travel-info__title {
         transform: rotate(0deg);
     }
@@ -267,13 +280,23 @@
         min-height: auto;
         height: auto;
     }
+    .travel-head {
+        margin-right: 20px;
+    }
+
     /* SLEEP */
+    .sleep-raiting {
+        min-height: auto;
+        margin-bottom: 30px;
+    }
+
     .sleep-info {
         max-width: 400px;
         justify-content: normal;
     }
     .sleep-info__item {
         min-height: 150px;
+        margin-bottom: 0;
     }
     .sleep-info__title {
         transform: rotate(0deg);
@@ -281,11 +304,11 @@
 
     .sleep-info__text {
         margin-top: 5px;
-        padding-left: 10px;
+        padding-left: 0px;
     }
 
     .sleep-head {
-        margin-right: 00px;
+        margin-right: 20px;
     }
 }
 
@@ -326,16 +349,35 @@
         padding-top: 50px;
     }
     .travel-info {
-        max-width: 400px;
+        max-width: 375px;
         justify-content: normal;
     }
 
     .travel-info__item {
         max-width: 100%;
     }
+
+    /* SLEEP */
+    .sleep-head {
+        margin-top: 0px;
+    }
+
+    /* SHOP */
+    .shop__slider {
+        margin-top: 0px;
+    }
+
+    .shop__board-info {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 400px) {
+    /* HEADER */
+    .header__content .title {
+        margin-bottom: 10px;
+    }
+
     /* SURF */
     .surf-slider li:not(:first-child) {
         margin-left: -10px;
@@ -391,5 +433,9 @@
 
     .surf-arrow {
         display: none;
+    }
+
+    .surf-list {
+        height: 670px;
     }
 }
