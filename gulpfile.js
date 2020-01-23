@@ -19,7 +19,7 @@ gulp.task('scss', function(){
       overrideBrowserslistgulp: ['last 8 versions']
     }))
     .pipe(rename({suffix: '.min'}))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('app/css/style'))
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -67,8 +67,8 @@ gulp.task('export', function(){
   let buildHtml = gulp.src('app/**/*.html')
     .pipe(gulp.dest('dist'));
 
-  let BuildCss = gulp.src('app/css/**/*.css')
-    .pipe(gulp.dest('dist/css'));
+  let BuildCss = gulp.src('app/css/style/*.css')
+    .pipe(gulp.dest('dist/css/style'));
 
   let BuildJs = gulp.src('app/js/**/*.js')
     .pipe(gulp.dest('dist/js'));
