@@ -3,11 +3,13 @@ wow = new WOW(
 {
 boxClass:     'wow',      // default
 animateClass: 'animated', // default
-offset:       200,          // default
+offset:       200,          // not default
 mobile:       true,       // default
 live:         true        // default
-}
-)
+});
+
+if (document.body.clientWidth < 400) wow.config.offset = 100;
+
 wow.init();
 
 /* Smooth Scroll */
