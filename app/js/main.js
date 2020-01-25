@@ -213,15 +213,15 @@ $('.surf-list').slick({
 /* Sleep  */
 
 $(document).ready(function() {
-    let sleepPrice = 0;
-    let sleepRate = 17.45;
+  let sleepPrice = 0;
+  let sleepRate = 17.45;
 
-    function setPrice() {
-        sleepPrice = +$('.sleep-info__nights').val() * +$('.sleep-info__guests').val() * sleepRate;
-        $('.sleep-info__price').html(sleepPrice.toFixed(2) + ' USD');
-        return;
-    }
-    setPrice()
+  function setPrice() {
+    sleepPrice = +$('.sleep-info__nights').val() * +$('.sleep-info__guests').val() * sleepRate;
+    $('.sleep-info__price').html(sleepPrice.toFixed(2) + ' USD');
+    return;
+  }
+  setPrice()
 
 	$('.minus').click( function () {
 		let $input = $(this).parent().siblings('input');
@@ -230,16 +230,16 @@ $(document).ready(function() {
 		$input.val(count);
 		$input.change();
 
-        setPrice()
+    setPrice()
 		return false;
 	});
 	$('.plus').click( function () {
 		let $input = $(this).parent().siblings('input');
-        if ($input.val() >= 9) return false; 
+    if ($input.val() >= 9) return false; 
 		$input.val(parseInt($input.val()) + 1);
 		$input.change();
 
-        setPrice()
+    setPrice()
 		return false;
 	});
 
