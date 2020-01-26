@@ -127,6 +127,8 @@ li {list-style: none;}
     font-weight: $font-extra-bold;
     text-transform: uppercase;
     align-items: center;
+    width: max-content;
+    margin: 0 auto;
 
     span {
         background-color: $color-secondary;
