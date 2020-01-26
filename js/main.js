@@ -8,7 +8,7 @@ mobile:       true,       // default
 live:         true        // default
 });
 
-if (document.body.clientWidth < 400) wow.config.offset = 100;
+if (document.body.clientWidth < 400) wow.config.offset = 50;
 
 wow.init();
 
