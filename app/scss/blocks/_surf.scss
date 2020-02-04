@@ -50,10 +50,27 @@
         position: relative;
     }
 
+    &__inner {
+        display: none;
+        width: 283px;
+        height: 252px;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        transform: translateX(-127px);
+        opacity: 0;
+        transition: opacity $transition-common;
+        z-index: 10;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
     &__item {
         position: absolute;
 
-        &:hover .surf-map__content-box {
+        &:hover .surf-map__inner {
             display: block;
         }
 
@@ -99,7 +116,7 @@
     }
 
     &__content-box {
-        display: none;
+        display: block;
         width: 283px;
         height: 216px;
         z-index: 100;
@@ -113,8 +130,7 @@
 
         position: absolute;
         bottom: 35px;
-        transform: translateX(-45%);
-        transition: opacity $transition-common;
+
 
         &::before {
             content: '';
@@ -131,7 +147,7 @@
         }
 
         &:hover {
-            display: block;
+           opacity: 1;
         }
     }
 
