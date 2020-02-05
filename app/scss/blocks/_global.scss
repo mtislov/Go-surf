@@ -167,7 +167,7 @@ li {list-style: none;}
 }
 
 .btn-common:hover {
-    border-top: 3px solid $color-secondary;
+    border-top: 3px solid transparent;
     border-bottom: 3px solid $color-secondary;
     color: $color-secondary;
 
