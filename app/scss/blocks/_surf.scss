@@ -308,7 +308,12 @@
         bottom: 0;
         left: 40px;
         transition: opacity $transition-common;
+
+        &:active, &:focus {
+            outline: none;
+        }
     }
+    
 
     &:hover .btn-surf {
         opacity: 1;
