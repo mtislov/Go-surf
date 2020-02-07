@@ -21,7 +21,8 @@ $("[data-scroll]").on("click", function(event) {
 
     let $this = $(this);
     let blockId = $this.data("scroll");
-    let blockOffset = $(blockId).offset().top;
+    let blockOffset = $(blockId).offset().top + parseInt($(blockId).css("padding-top"));
+
 
     $("html, body").animate({
         scrollTop: blockOffset
