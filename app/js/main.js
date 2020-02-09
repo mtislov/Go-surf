@@ -1,3 +1,4 @@
+
 /* WOW JS */
 wow = new WOW(
 {
@@ -12,9 +13,14 @@ if (document.body.clientWidth < 400) wow.config.offset = 100;
 
 wow.init();
 
-/* Smooth Scroll */
+/* REDER FIRST SECTION */
+// First I get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = document.getElementById('header').innerHeight * 0.01;
+// Then I set the value in the --vh custom property to the root of the document
+document.getElementById('header').style.setProperty('--vh', `${vh}px`);
 
 
+/* SMOOTH SCROLL */
 $("[data-scroll]").on("click", function(event) {
 
     event.preventDefault();
