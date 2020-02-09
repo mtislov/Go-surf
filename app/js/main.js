@@ -23,18 +23,17 @@ document.getElementById('header').style.setProperty('--vh', `${vh}px`);
 /* SMOOTH SCROLL */
 $("[data-scroll]").on("click", function(event) {
 
-    event.preventDefault();
+  event.preventDefault();
 
-    let $this = $(this);
-    let blockId = $this.data("scroll");
-    let blockOffset = $(blockId).offset().top + parseInt($(blockId).css("padding-top"));
+  let $this = $(this);
+  let blockId = $this.data("scroll");
+  let blockOffset = $(blockId).offset().top + parseInt($(blockId).css("padding-top"));
 
 
-    $("html, body").animate({
-        scrollTop: blockOffset
-    }, 500);
+  $("html, body").animate({
+      scrollTop: blockOffset
+  }, 500);
 });
-
 
 
 /* DATE */
@@ -47,50 +46,48 @@ document.querySelector('.date__year').textContent = date.getFullYear();
 /* HEADER */
 let header = document.getElementById('header');
 
-
 $(function(){
 
-    $('.header__slider').slick({
-        asNavFor: '.slider-dots',
-        infinite: true,
-        fade: true,
-        rows: 0,
-        swipe: false,  
-        prevArrow: '<img class="slider-arrow slider-arrow-left arrow-upper" src="img/header/arrow-left.svg" alt=""></img>',
-        nextArrow: '<img class="slider-arrow slider-arrow-right arrow-upper" src="img/header/arrow-right.svg" alt=""></img>',
-    });
+  $('.header__slider').slick({
+    asNavFor: '.slider-dots',
+    infinite: true,
+    fade: true,
+    rows: 0,
+    swipe: false,  
+    prevArrow: '<img class="slider-arrow slider-arrow-left arrow-upper" src="img/header/arrow-left.svg" alt=""></img>',
+    nextArrow: '<img class="slider-arrow slider-arrow-right arrow-upper" src="img/header/arrow-right.svg" alt=""></img>',
+  });
 
-    $('.slider-dots').slick({
-        rows: 0,
-        swipe: false,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        asNavFor: '.header__slider',
-        focusOnSelect: true,
-        
-    });
+  $('.slider-dots').slick({
+    rows: 0,
+    swipe: false,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    asNavFor: '.header__slider',
+    focusOnSelect: true,
+  });
 
-    $('.slider-arrow-bottom').on('click', function() {
-        $('.header__slider').slick('slickNext');
-    });
-  
-    let northLine = document.getElementById('north-line');
-    let westLine = document.getElementById('west-line');
-    let eastLine = document.getElementById('east-line');
-    let southLine = document.getElementById('south-line');
+  $('.slider-arrow-bottom').on('click', function() {
+    $('.header__slider').slick('slickNext');
+  });
 
-    let linesArr = [northLine, westLine, eastLine, southLine];
+  let northLine = document.getElementById('north-line');
+  let westLine = document.getElementById('west-line');
+  let eastLine = document.getElementById('east-line');
+  let southLine = document.getElementById('south-line');
 
-    let animateClass = 'map__line--animation';
+  let linesArr = [northLine, westLine, eastLine, southLine];
+
+  let animateClass = 'map__line--animation';
 
 
-    $('.header__slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-        let beforeLine = linesArr[currentSlide];
-        let currentLine = linesArr[nextSlide];
+  $('.header__slider').on('beforeChange', function(currentSlide, nextSlide){
+    let beforeLine = linesArr[currentSlide];
+    let currentLine = linesArr[nextSlide];
 
-        currentLine.classList.add(animateClass);
-        beforeLine.classList.remove(animateClass);
-    });
+    currentLine.classList.add(animateClass);
+    beforeLine.classList.remove(animateClass);
+  });
 });
 
 
@@ -98,18 +95,18 @@ let mapSvg = document.querySelector('.map-svg');
 let northText = document.querySelector('.north-shore__text');
 
 function changeMap() {
-    if (document.body.clientWidth < 800) {
-        mapSvg.setAttribute("viewBox", "0 40 860 500");
-    }
+  if (document.body.clientWidth < 800) {
+    mapSvg.setAttribute("viewBox", "0 40 860 500");
+  }
 
-    if (document.body.clientWidth < 400) {
-        mapSvg.setAttribute("viewBox", "0 40 770 500");
-    }
+  if (document.body.clientWidth < 400) {
+    mapSvg.setAttribute("viewBox", "0 40 770 500");
+  }
 
-    if (document.body.clientWidth < 640) {
-        northText.setAttribute("x", "382")
-        northText.setAttribute("y", "260")
-    }  
+  if (document.body.clientWidth < 640) {
+    northText.setAttribute("x", "382")
+    northText.setAttribute("y", "260")
+  }  
 }
 
 changeMap(mapSvg, northText);
@@ -126,9 +123,9 @@ let map = header.querySelector('.map');
 let headerContent = header.querySelector('.header__content');
 
 menuToggle.addEventListener('click', function() {
-    aside.classList.toggle('aside-active');
-    map.classList.toggle('opacity-off');
-    headerContent.classList.toggle('opacity-off');
+  aside.classList.toggle('aside-active');
+  map.classList.toggle('opacity-off');
+  headerContent.classList.toggle('opacity-off');
 });
 
 
@@ -152,15 +149,15 @@ calcPoints();
 
 $('.surf-list').slick({
 
-    touchThreshold: 20,
-    rows: 0,
-    touchThreshold: 10,
-    infinite: false,
-    slidesToShow: 5,
-    slidesToScroll: 3,
-    prevArrow: '<img class="slider-arrow slider-arrow-left surf-arrow" src="img/header/arrow-left.svg" alt=""></img>',
-    nextArrow: '<img class="slider-arrow slider-arrow-right surf-arrow" src="img/header/arrow-right.svg" alt=""></img>',
-      responsive: [
+  touchThreshold: 20,
+  rows: 0,
+  touchThreshold: 10,
+  infinite: false,
+  slidesToShow: 5,
+  slidesToScroll: 3,
+  prevArrow: '<img class="slider-arrow slider-arrow-left surf-arrow" src="img/header/arrow-left.svg" alt=""></img>',
+  nextArrow: '<img class="slider-arrow slider-arrow-right surf-arrow" src="img/header/arrow-right.svg" alt=""></img>',
+  responsive: [
     {
       breakpoint: 1760,
       settings: {
@@ -264,13 +261,13 @@ $(document).ready(function() {
 let surfboardPoints = document.querySelectorAll('.surfboard__circle');
 
 for (point of surfboardPoints) {
-    let surfboardStrip = point.querySelector('.surfboard__strip:last-child');
-    let surfboardContent = point.nextElementSibling;
+  let surfboardStrip = point.querySelector('.surfboard__strip:last-child');
+  let surfboardContent = point.nextElementSibling;
 
-    point.addEventListener("click", function() {
-        surfboardStrip.classList.toggle('active');
-        surfboardContent.classList.toggle('active');
-    });
+  point.addEventListener("click", function() {
+      surfboardStrip.classList.toggle('active');
+      surfboardContent.classList.toggle('active');
+  });
 }
 
 
