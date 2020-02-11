@@ -1,13 +1,17 @@
-#menuToggle {
+.menuToggle {
   display: none;
   z-index: 100;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
   margin-left: 10px;
+}
+
+.menuToggle-active {
+  margin-left: 35px;
 }
 
 #menuToggle input {

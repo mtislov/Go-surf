@@ -116,17 +116,47 @@ window.addEventListener('resize', event => {
   setTimeout(calcPoints, 1000);
 });
 
-/* header/ menu toggle */
+
+
+
+
+
+
+
+
+
+/* MENU TOGGLE */
+
+
 let menuToggle = document.getElementById('menuToggle');
 let aside = header.querySelector('.aside');
 let map = header.querySelector('.map');
 let headerContent = header.querySelector('.header__content');
 
+
+
+
+
 menuToggle.addEventListener('click', function() {
   aside.classList.toggle('aside-active');
-  map.classList.toggle('opacity-off');
-  headerContent.classList.toggle('opacity-off');
+  menuToggle.classList.toggle('menuToggle-active');
 });
+
+let menuLinks = document.querySelectorAll('.menu__link');
+
+for (link of menuLinks) {
+  link.onclick = function () {
+    if (!aside.classList.contains("aside-active")) return;
+    aside.classList.toggle('aside-active');
+    menuToggle.classList.toggle('menuToggle-active');
+    menuCheckbox.checked = false;
+  }
+}
+
+
+
+
+
 
 
 /* SURF */

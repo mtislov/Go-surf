@@ -35,11 +35,17 @@
     }
     
     &-active {
+        position: fixed;
         display: block !important;
         background: #171919;
         border: none;
         opacity: 1;
         padding-top: 60px;
+        box-shadow: 21px 0px 58px -6px rgba(0,0,0,0.86);
+    }
+
+    &-active .aside__logo {
+        display: none;
     }
 }
 
